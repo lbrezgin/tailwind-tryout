@@ -22,6 +22,8 @@ gem "jbuilder"
 # gem "redis", ">= 4.0.1"
 gem "tailwindcss-ruby", "3.4.13"
 
+gem "view_component", require: "view_component/engine"
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -46,6 +48,7 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+  gem 'rspec-rails', '~> 7.0.0'
 end
 
 group :development do
@@ -55,3 +58,4 @@ end
 
 
 gem "tailwindcss-rails", "~> 3.3"
+gem 'capybara'
